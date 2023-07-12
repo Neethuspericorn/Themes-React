@@ -1,0 +1,20 @@
+@import './../../partials';
+.page-wrap{
+    display: flex;
+    .page-container{
+        // flex: 0 0 calc(100% - 287px);
+        // max-width: calc(100% - 287px);
+        flex: 1;
+        @media screen and ($sm-991){
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 60px;
+        }
+    }
+    .page-contents{
+        padding-top: 20px;
+        height: 100%;
+        overflow: auto;
+        max-height: calc(100vh - 55px);
+    }
+}

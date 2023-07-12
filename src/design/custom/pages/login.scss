@@ -1,0 +1,182 @@
+
+@import './../../partials';
+
+.login-cover{
+    background: {
+        image: url('../../../assets/images/login-bg.png');
+        size: cover;
+        position: center;
+    };
+    min-height: 100vh;
+    padding: 50px 20px;
+    padding-right: 260px;
+    .logo-block{
+        position: absolute;
+        left: 90px;
+        top: 60px;
+        a{
+            display: inline-block;
+        }
+    }
+    .login-block{
+        max-width: 100%;
+        box-shadow: 0px 3px 53px #32353A0D;
+        border-radius: 60px;
+        background-color: #fff;
+        width: 600px;
+        padding: 70px 60px;
+        margin-left: auto;
+        font-family: $primary-font;
+        .logo-block-sm{
+            text-align: center;
+            a{
+                display: inline-block;
+            }
+        }
+        .login-title{
+            padding-top: 35px;
+            text-align: center;
+            h2{
+                font-weight: 500;
+                margin-bottom: 0;
+                display: inline-block;
+                position: relative;
+                font-size: 24px;
+                &::before, &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 6px;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #AC80F7;
+                }
+                &::before{
+                    left: -28px;
+                }
+                &::after{
+                    left: auto;
+                    right: -28px;
+                }
+                .title-cover{
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+            p{
+                font-family: 'Prompt', sans-serif;
+                margin-bottom: 0;
+                padding-top: 25px;
+                color: #53575E;
+                font-size: 14px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        .login-btn-block{
+            padding-top: 45px;
+            .login-btn{
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                transition: .3s;
+                padding: 15px;
+                background: transparent linear-gradient(180deg, #9663EC 0%, #9B65F6 50%, #8F57EF 100%);
+                border-radius: 16px;
+                img{
+                    margin-right: 15px;
+                }
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+@media ($sm-1679){
+    .login-cover .login-block{
+        width: 500px;
+        padding: 65px 50px;
+    }
+    .login-cover{
+        padding-right: 10vw;
+    }
+    .login-cover .logo-block {
+        left: 70px;
+        top: 40px;
+    }
+    .login-cover .login-block .login-title h2{
+        font-size: 21px;
+    }
+    .login-cover .login-block .login-title p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .login-cover .login-block .login-btn-block .login-btn{
+        font-size: 16px;
+    }
+    .login-cover .login-block .login-btn-block .login-btn img{
+        width: 34px;
+    }
+}
+@media ($sm-991){
+    .login-cover{
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px !important;
+    }
+    .login-cover .login-block{
+        margin-left: 0;
+    }
+    .login-cover .logo-block{
+        display: none;
+    }
+}
+@media ($sm-767){
+    .login-cover .login-block .logo-block-sm a img{
+        height: 35px;
+    }
+    
+    .login-cover .login-block {
+        width: 460px;
+        padding: 65px 40px;
+    }
+    .login-cover .login-block .login-title p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .login-cover .login-block .login-btn-block .login-btn {
+        font-size: 14px;
+    }
+    .login-cover .login-block .login-btn-block .login-btn img {
+        width: 26px;
+    }
+}
+@media ($sm-579){
+    .login-cover{
+        padding: 40px 15px 30px !important;
+    }
+    .login-cover .logo-block {
+        margin-bottom: 50px;
+    }
+    .login-cover .login-block{
+        width: 420px;
+        padding: 55px 35px;
+        border-radius: 40px;
+    }
+    
+    .login-cover .login-block .logo-block-sm a img{
+        height: 32px;
+    }
+    .login-cover .login-block .login-btn-block {
+        padding-top: 35px;
+    }
+}
+@media ($sm-479){
+    .login-cover .login-block{
+        padding: 50px 25px;
+    }
+    .login-cover .login-block .login-title {
+        padding-top: 35px;
+    }
+}

@@ -1,0 +1,15 @@
+.form-control{
+    &.theme{
+        background-color: $input_bg;
+        border-radius: 12px;
+        font: normal normal normal 12px/18px $primary-font;
+        height: 51px;
+        &::-webkit-input-placeholder{
+            color: $table_content;
+        }
+        @media ($sm-1679){
+            height: 41px;
+            border-radius: 9px;
+        }
+    }
+}

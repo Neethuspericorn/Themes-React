@@ -1,0 +1,119 @@
+
+@import './../../partials';
+
+.teams-cover{
+    background-color: $table_td_bg;
+    .custom-table{
+        min-width: 1000px;
+    }
+    .custom-table{
+        th{
+            &:first-child{
+                padding-left: 50px !important;
+            }
+        }
+    }
+}
+.add-dropdown-block{
+    .dropdown-toggle-btn{
+        color: $white;
+        border: none;
+        outline: none;
+        background: $primary !important;
+        border-radius: 8px;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        min-width: 90px;
+        justify-content: space-between;
+        min-height: 32px;
+        &::after{
+            margin-left: 15px;
+            border: none;
+            width: 10px;
+            height: 10px;
+            background: {
+                image: url('../../../assets/images/arrow_down-light.svg');
+                position: center;
+                repeat: no-repeat;
+            };
+        }   
+    }
+}
+.dropdown-menu-lg{
+    width: 500px;
+    background-color: $white;
+    box-shadow: 0px 3px 40px #00000087;
+    padding: 40px !important;
+    @media ($sm-1441){
+        padding: 30px !important;
+    }
+    .dropdown-close-btn{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        background-color: $white;
+        border: none;
+        box-shadow: none;
+        color: $grey_alt;
+    }
+    .dropdown-form-cover{
+        h2{
+            color: $title-dark;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        .dropdown-form-block{
+            .inp-row{
+                margin-bottom: 25px;
+                align-items: center;
+            }
+            .inp-label{
+                font-size: 14px;
+                color: $inp-color;
+                font-weight: 400;
+            }
+            .inp-item{
+                outline: none;
+                font-weight: 300;
+                width: 100%;
+                padding: 10px 18px;
+                border: 1px solid $inp_border;
+                border-radius: 6px;
+                background-color: $white;
+                color: $inp-color;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media ($sm-991){
+    .dropdown-menu-lg {
+        width: 420px;
+    }
+    .dropdown-menu-lg .dropdown-form-cover .dropdown-form-block .inp-label, 
+    .dropdown-menu-lg .dropdown-form-cover .dropdown-form-block .inp-item{
+        font-size: 13px;
+    }
+}
+@media ($sm-767){
+    .dropdown-menu-lg {
+        padding: 20px !important;
+    }
+}
+@media ($sm-579){
+    .dropdown-menu-lg {
+        width: 300px;
+    }
+    .dropdown-menu-lg .dropdown-form-cover .dropdown-form-block .inp-row {
+        margin-bottom: 10px;
+    }
+    .dropdown-menu-lg .dropdown-form-cover h2 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .dropdown-menu-lg .dropdown-form-cover .dropdown-form-block .inp-item{
+        padding: 6px 15px;
+    }
+}

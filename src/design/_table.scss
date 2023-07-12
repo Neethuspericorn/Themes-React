@@ -1,0 +1,137 @@
+.custom-table{
+    font-family: $primary-font;
+    th{
+        color: $border_alt;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 18px 15px !important;
+        background-color: $white;
+        border: none;
+    }
+    td{
+        background-color: $table_td_bg !important;
+        border-bottom: solid 1px $card_boder;
+        color: $table_content;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 15px 15px !important;
+        .name-ltr{
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-size: 11px;
+            line-height: 12px;
+            margin-right: 15px;
+            background-color: $primary;
+            &.bg-2{
+                background-color: #EF934D;
+            }
+            &.bg-3{
+                background-color: #94BC28;
+            }
+            &.bg-4{
+                background-color: #2EA275;
+            }
+            &.bg-5{
+                background-color: #D940C2;
+            }
+            &.bg-6{
+                background-color: #E35A7A;
+            }
+            &.bg-7{
+                background-color: #3D83E3;
+            }
+        }
+        .timer{
+            margin-right: 8px;
+            color: $table_content_light;
+            line-height: 1;
+        }
+    }
+}
+// Table pagination
+.table-pagination-cover{
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    .pagination-entries{
+        flex: 1 1 auto;
+        font-size: 14px;
+        color: #A2A5AC;
+        @media ($sm-1679){
+            font-size: 13px;
+        }
+    }
+    .pagination-nav-block{
+        flex: 0 0 auto;
+        .pagination-nav{
+            .pagination{
+                margin-bottom: 0;
+                align-items: center;
+                .page-item{
+                    .page-link{
+                        width: 27px;
+                        height: 27px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #F2F0F6;
+                        color: $table_content;
+                        font-size: 11px;
+                        font-weight: 500;
+                        border-radius: 50%;
+                        margin: 3px;
+                        box-shadow: none;
+                        transition: .3s;
+                        padding: 0;
+                        border: none;
+                        &:hover,&.active{
+                            background-color: $primary;
+                            color: $white !important;
+                        }
+                    }
+                    .page-link-btn{
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        margin: 3px;
+                        color: rgba($color: $table_content, $alpha: 0.55);
+                        text-decoration: none;
+                        background: none;
+                        border-radius: none;
+                        transition: .3s;
+                        &.prev{
+                            margin-right: 20px;
+                        }
+                        &.next{
+                            margin-right: 15px;
+                            margin-left: 15px;
+                        }
+                        &:hover{
+                            color: $table_content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.table-min-h{
+    min-height: 500px;
+}
+@media ($sm-1679){
+    .custom-table td, .custom-table th{
+        font-size: 13px;
+    }
+}
+@media ($sm-1441){
+    .custom-table td, .custom-table th{
+        font-size: 12px;
+    }
+}

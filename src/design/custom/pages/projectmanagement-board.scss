@@ -1,0 +1,370 @@
+@import '../../app.scss';
+
+// Listing Heading Area
+.project-tile-area {
+    padding: 25px 15px;
+    column-gap: 32px;
+    overflow-y: auto;
+    overflow-x: hidden;
+   
+    .project-process{
+        // margin-right: 30px;
+        // min-width: 270px;
+        min-width: 15%;
+        max-width: 100%;
+        .project-process-head{
+            display: flex;
+            align-items: center;
+            padding: 20px 15px;
+            background: $white_color;
+            box-shadow: 0px -4px 6px $box_shadow_2;
+            border: 1px solid $border_alt;
+            border-radius: 5px;
+            position: relative;
+            margin-bottom: 30px;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                border-radius: 20px 20px 0px 0px;
+                left: 0px;
+                top: -3px;
+            }
+            &.to-do{
+                &::before{
+                    background-color: $dm_grey_main;
+                }
+            }
+            &.in-progress{
+                &::before{
+                    background-color: $secondary;
+                }
+            }
+            &.ready-for-qa{
+                &::before{
+                    background-color: $primary;
+                }
+            }
+            &.complete{
+                &::before{
+                    background-color: $orange;
+                }
+            }
+            &.in-review{
+                &::before{
+                    background-color: $red;
+                }
+            }
+            &.closed{
+                &::before{
+                    background-color: $green;
+                }
+            }
+            .project-process-name{
+                font-size: 14px;
+                line-height:normal;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $grey_main;
+                margin-bottom: 0px;
+            }
+            .poject-process-count {
+                background: $white_color;
+                border: 1px solid $border_alt;
+                border-radius: 11px;
+                padding: 1px 12px;
+                margin-left: 25px;
+                color: $dm_grey_alt;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// Project Task Styles 
+.project-cards{
+    background: $white_color;
+    box-shadow: 0px 3px 6px $box_shadow;
+    border: 1px solid $border_alt;
+    border-radius: 5px;
+   
+    margin-bottom: 12px;
+    position: relative;
+    .spc{
+        padding: 15px 15px 0px;
+    }
+    .project-cards-head{
+      
+        display: flex;
+        .project-card-name-area{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .project-card-project-info{
+                .project-card-nav{
+                    list-style: none;
+                    display: flex;
+                    padding: 0px;
+                    margin: 0px;
+                    li{
+                        padding-right: 15px;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        color: $grey_alt;
+                        font-family: $primary-font;
+                        font-weight: 400;
+                        position: relative;
+                        white-space: nowrap;
+                        &::after{
+                            content: ">";
+                            position: absolute;
+                            top: 0px;
+                            right: 5px;
+                            font-size: 13px;
+                            line-height: 1.5;
+                            color: $grey_alt;
+                            font-family: $primary-font;
+                            font-weight: 400;
+                        }
+                        &:last-child{
+                            padding-right: 0px;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .project-name-head{
+                margin-top: 0px;
+                .project-task-name{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: $grey_main;
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .project-card-team-info{
+            .project-avathar{
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                position: relative;
+                .on-off{
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 4px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 1;
+                    &.online{
+                        background-color: $green;
+                    }
+                    &.offline{
+                        background-color: $dm_grey_main;
+                    }
+                }
+                
+                .project-avathar-name{
+                    font-size: 13px;
+                    line-height: 1.5;
+                    color: $grey_alt;
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    color: $white;
+                }
+                &.round-color-1{
+                    background-color: $round-color-1;
+                }
+                &.round-color-2{
+                    background-color: $round-color-2;
+                }
+                &.round-color-3{
+                    background-color: $round-color-3;
+                }
+                &.round-color-4{
+                    background-color: $round-color-4;
+                }
+                &.round-color-5{
+                    background-color: $round-color-5;
+                    
+                }
+               
+                
+            }
+        }
+    }
+
+    .project-task-view-area{
+        margin-top: auto;
+    }
+
+    .info-items{
+        column-gap: 15px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        .info{
+            padding:1px 5px;
+        }
+        .icon-info{
+            margin-right: 8px; 
+            flex-shrink: 0;
+           img{
+            width: 10px;
+           }
+            
+        }
+        span{
+            color: $text-dark-color;
+            font:13px/14px $primary-font;
+        }
+        .subtask{
+           border:1px solid  $border_alt;
+           border-radius: 4px;
+           min-width: 45px;
+           cursor: pointer;
+           .icon-info{
+            margin-right: 6px;
+           }
+        }
+    }
+
+    .add-item{
+        font:12px/14px $primary-font;
+        margin-top: auto;
+        color: $dm_grey_main;
+        padding: 0;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0;
+        background-color: transparent;
+        text-align: left;
+       
+        // width: 100%;
+        position: relative;
+        
+        
+        .btn-icon{
+           margin-right: 8px;
+        } 
+    }
+
+    .card-ftr{
+      min-height: 38px;
+      width: 100%;
+      padding:0px 15px 0px;
+      transition: .2s;
+    border-top: 1px solid $border_alt;
+    // display: none !important;
+    .star{
+        color: $dm_grey_main;
+        &:hover{
+            color: $secondary;
+        }
+
+    }
+    button{
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    .ok{
+        margin-right: 15px;
+        color: $dm_grey_main;
+        &:hover{
+            color:$green;
+        }
+      }
+    }
+}
+
+.drop_down_menu{
+
+    .drop-dwn-btn{
+        border: 0;
+        background-color: transparent;
+        &.dropdown-toggle::after{
+            display: none;
+        }
+    }
+    .show{
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+.add-item{
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    .hvr{
+        padding: 5px;
+        border-radius: 5px;
+        &:hover{ 
+            background-color: $light_btn_hover;
+        }
+    }
+}
+
+.card-ftr.info{
+    position: absolute;
+    bottom: 0;
+    display: none !important;
+    z-index: 5;
+    background-color: $white_color;
+}
+.sct-top{
+    &:hover{
+        .card-ftr.info{
+            display: flex !important;
+        }
+    }
+}
+
+.project-tile-area{
+    height: calc(100vh - 70px);
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.project-process-card{
+    height: 80vh;
+    overflow: auto;
+    padding-right: 3px;
+}
+
+@media($sm-1679){ 
+.project-tile-area .project-process {
+    min-width: 25%;
+}
+
+.project-tile-area .project-process .project-process-head{
+    padding: 15px 12px;
+}
+.project-tile-area .project-process .project-process-head .project-process-name {
+    font-size: 13px;
+}
+.project-cards .project-cards-head .project-card-team-info .project-avathar .project-avathar-name {
+    font-size: 12px;
+}
+.project-cards .spc {
+    padding: 10px 15px 0px;
+}
+.project-tile-area{
+    column-gap: 20px;
+}
+}
+@media($sm-1281){ 
+    .project-tile-area .project-process {
+        min-width: 250px;
+    }
+
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="Group_59437" data-name="Group 59437" transform="translate(-1380 -855)">
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1380 855)" fill="none" stroke="#c7cad0" stroke-width="1" stroke-dasharray="4">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <g id="vuesax_outline_user-add" data-name="vuesax/outline/user-add" transform="translate(1213.24 672.239)">
+      <g id="user-add" transform="translate(172 188)">
+        <path id="Vector" d="M3.719,7.437A3.719,3.719,0,1,1,7.437,3.719,3.723,3.723,0,0,1,3.719,7.437Zm0-6.467A2.749,2.749,0,1,0,6.467,3.719,2.755,2.755,0,0,0,3.719.97Z" transform="translate(4.042 0.808)" fill="#c7cad0"/>
+        <path id="Vector-2" data-name="Vector" d="M.485,5.5A.489.489,0,0,1,0,5.012C0,2.251,2.71,0,6.04,0A7.046,7.046,0,0,1,7.955.259.483.483,0,1,1,7.7,1.19,6.123,6.123,0,0,0,6.04.97C3.247.97.97,2.781.97,5.012A.489.489,0,0,1,.485,5.5Z" transform="translate(1.72 9.216)" fill="#c7cad0"/>
+        <path id="Vector-3" data-name="Vector" d="M3.072,6.144a3.04,3.04,0,0,1-2.05-.8,2.769,2.769,0,0,1-.582-.7A3.067,3.067,0,0,1,.867.931a3.069,3.069,0,0,1,4.488.091,3.065,3.065,0,0,1,.789,2.05,2.717,2.717,0,0,1-.1.724,2.757,2.757,0,0,1-.356.86A3.043,3.043,0,0,1,3.072,6.144Zm0-5.174a2.1,2.1,0,0,0-2.1,2.1,2.049,2.049,0,0,0,.3,1.08,1.879,1.879,0,0,0,.394.479,2.072,2.072,0,0,0,1.4.55,2.106,2.106,0,0,0,1.8-1.015,2.014,2.014,0,0,0,.239-.588,1.881,1.881,0,0,0,.065-.5,2.1,2.1,0,0,0-.543-1.4A2.043,2.043,0,0,0,3.072.97Z" transform="translate(8.569 8.569)" fill="#c7cad0"/>
+        <path id="Vector-4" data-name="Vector" d="M2.419.97H.485A.489.489,0,0,1,0,.485.489.489,0,0,1,.485,0H2.419A.489.489,0,0,1,2.9.485.489.489,0,0,1,2.419.97Z" transform="translate(10.192 11.143)" fill="#c7cad0"/>
+        <path id="Vector-5" data-name="Vector" d="M.485,2.9A.489.489,0,0,1,0,2.419V.485A.489.489,0,0,1,.485,0,.489.489,0,0,1,.97.485V2.419A.484.484,0,0,1,.485,2.9Z" transform="translate(11.156 10.199)" fill="#c7cad0"/>
+        <path id="Vector-6" data-name="Vector" d="M0,0H15.521V15.521H0Z" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

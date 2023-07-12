@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="Group_57768" data-name="Group 57768" transform="translate(-8686 -1361)">
+    <circle id="Ellipse_482" data-name="Ellipse 482" cx="23.5" cy="23.5" r="23.5" transform="translate(8686 1361)" fill="#ac80f7" opacity="0.18"/>
+    <g id="vuesax_bold_task-square" data-name="vuesax/bold/task-square" transform="translate(8695.583 1370.583)">
+      <g id="task-square" transform="translate(0 0)">
+        <path id="Vector" d="M16.263,0h-9.6C2.487,0,0,2.487,0,6.659v9.6c0,4.172,2.487,6.659,6.659,6.659h9.6c4.172,0,6.659-2.487,6.659-6.659v-9.6C22.921,2.487,20.434,0,16.263,0ZM9.134,14.784,6.555,17.363a.85.85,0,0,1-.607.252.831.831,0,0,1-.607-.252l-.86-.86a.844.844,0,0,1,0-1.215.865.865,0,0,1,1.215,0l.252.252,1.971-1.971a.859.859,0,1,1,1.215,1.215Zm0-8.022L6.555,9.34a.85.85,0,0,1-.607.252.831.831,0,0,1-.607-.252l-.86-.86a.844.844,0,0,1,0-1.215.865.865,0,0,1,1.215,0l.252.252L7.919,5.547A.859.859,0,1,1,9.134,6.762Zm8.7,9.994H11.816a.86.86,0,0,1,0-1.719h6.017a.86.86,0,0,1,0,1.719Zm0-8.022H11.816a.86.86,0,0,1,0-1.719h6.017a.86.86,0,1,1,0,1.719Z" transform="translate(2.292 2.292)" fill="#ac80f7"/>
+        <path id="Vector-2" data-name="Vector" d="M0,0H27.505V27.505H0Z" transform="translate(27.505 27.505) rotate(180)" fill="none" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

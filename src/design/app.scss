@@ -1,0 +1,46 @@
+
+@import 'partials';
+@import 'forms';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+body {
+  margin: 0;
+  font-weight: 300 ; // default font weight
+  font-size: $primary-font-size ; // default font size
+  color: $grey_main ; // default color size
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $primary-font;
+}
+
+// custom scroll 
+.custom-scroll{
+  &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+      border-radius: 3px;
+      background: $scroll_track;
+  }
+  &::-webkit-scrollbar-thumb {
+      background: $scroll_thumb;
+      border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+      background: $scroll_thumb_hover;
+  }
+}
+
+
+#root {
+  // Scss variables which we gonna assign using
+  // useState and JavaScript in reactJS
+  $background-color: #fff;
+  $text-color: #262833;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+}

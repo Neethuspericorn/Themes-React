@@ -1,0 +1,175 @@
+
+@import './../../partials'; 
+
+.card-box{
+    border: 1px solid $card_boder;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    .header-otr{
+        padding: 28px 24px 0;
+        .title-md{
+            font: 500 16px/24px $primary-font;
+            color: $grey_main;
+        }
+        .rgt-sctn{
+            margin-left: auto;
+
+        }
+    }
+}
+
+.drop-down-menu{
+    .drop-dwn-btn{
+        border: 0;
+        background-color: transparent;
+        &.dropdown-toggle::after{
+            display: none;
+        }
+    }
+    .show{
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+
+.table-height{
+    // overflow: auto;
+    // max-height: calc(100vh - 355px);
+    // min-height: calc(100vh - 355px);
+}
+
+
+
+.content-tables{
+    padding: 8px;
+
+    th, td{}
+   .width-001{
+    width: 140px;
+   }
+
+
+    thead{
+  
+    }
+    .td-center{
+        th, td{
+         text-align: center;
+        }
+     }
+     .left-txt{
+        text-align: left !important;
+     }
+    table{
+        background-color: transparent;
+       tr{
+       
+       }
+        th{
+            border: 0;
+            padding: 10px 15px;
+            .tbl-hd{
+                color: $text-dark-color;
+                font:400 13px/17px $primary-font;
+                white-space: nowrap;
+            }
+        }
+        
+        tbody{
+            
+            tr{
+                border-bottom: 1px solid $table_row_border;
+                border-top: 0;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                .tbl-cont {
+                    color: $table_content;
+                    white-space: nowrap;
+                    .icon{
+                        margin-right: 8px;
+                    }
+                }
+                .tbl-cont-light{
+                    color: $table_content_light;
+                    font:400 12px/17px $primary-font;
+                }
+
+            }
+            .short-text{
+                    max-width: 150px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+             }
+             td{
+                background-color:$table_td_bg;
+                padding: 10px 15px;
+                border: 0;
+                font:400 11px/17px $primary-font;
+                vertical-align: middle;
+     
+                .task-row-status{
+                    width: 8px;
+                    height: 8px;
+                    margin: auto;
+                    border-radius: 2px;
+                    
+                    cursor: pointer;
+                    &.todo-task{
+                        background-color: $task_tod;
+                    }
+                    &.inprgs-task{
+                     background-color: $secondary;
+                    }
+                }
+                
+                .status-info{
+                    
+                    .status{
+                        font:400 12px/17px $primary-font;
+                        padding: 5px 8px;
+                        color: $white_color;
+                        border-radius: 4px;
+                        min-width: 90px;
+                        min-height: 26px;
+                        text-align: center;
+                        white-space: nowrap;
+                      &.todo{
+                        background-color: $task_tod;
+                      }
+                      &.inprgs{
+                        background-color: $secondary;
+                      }
+                    }
+                }
+
+                .subtasks-item{
+                    cursor: pointer;
+                    border: 1px solid $subtasks_item_border;
+                    border-radius: 4px;
+                    padding: 3px 5px;
+                    margin-left: 8px;
+                    height: 20px;
+                    .icon-small{
+                        span{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+
+
+@media($sm-1679){ 
+    .card-box .header-otr {
+        padding: 15px 15px 0;
+    }
+    .card-box .header-otr .title-md {
+        font-size: 14px;
+    }
+}
+

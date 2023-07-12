@@ -1,0 +1,51 @@
+@import './../../app';
+
+
+.count-tickets{
+    border: 1px solid #E8EAED;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    // margin-bottom: 24px;
+    .card-title-block{
+        flex: 1 1 auto;
+    }
+    .card-icon-block{
+        flex: 0 0 auto;
+    }
+    .card-title{
+        font-size: 0.875rem;
+        font-family: $primary-font;
+        color: #53575E;
+        margin-bottom: 8px;
+    }
+    .card-count{
+        color: $white;
+        font-weight: 500;
+        font-size: 1.375rem;
+        font-family: $primary-font;
+        color: #53575E;
+        margin-bottom: 0px;
+    }
+}
+
+@media ($sm-1679){
+    .count-tickets .card-count{
+        font-size: 1.250rem;
+    }
+    .count-tickets{
+        padding: 15px;
+    }
+    .count-tickets .card-icon-block img{
+        width: 45px;
+    }
+    .count-tickets .card-title {
+        font-size: 0.825rem;
+    }
+}
+
+@media ($sm-1281){
+    .count-tickets .card-count {
+        font-size: 1.10rem;
+    }
+}
