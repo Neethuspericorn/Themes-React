@@ -28,14 +28,14 @@
         &:hover{
             &:after{
                 // background-color: $primary;
-                background-color: var(--primary3);
+                background-color: var(--primary);
             }
         }
         &.active{
             font-weight: 500;
             &:after{
                 // background-color: $primary;
-                background-color: var(--primary3);
+                background-color: var(--primary);
             }
         }
     }
